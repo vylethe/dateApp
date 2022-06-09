@@ -1,10 +1,18 @@
-import Login from "./components/Login";
+import Login from "./pages/Login";
+import React from "react"
+import { BrowserRouter as Router, Routes } from "react-router-dom"
+import { Route } from "react-router"
 
 function App() {
   return (
-    <div>
-      <Login />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login/>}/>
+        {/* <Route path="/register" component={Register} /> */}
+        <Route path="/*" element={Container} />
+      </Routes>
+      {/* <CreatePost /> */}
+   </Router>
   );
 }
 
