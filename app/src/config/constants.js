@@ -1,0 +1,85 @@
+export const isProd = process.env.NODE_ENV === 'production';
+
+export const ROUNDS_LIMIT = 3;
+
+export const stepOneTitle = name => `Waiting for ${name} to start search…`;
+export const loginMessage = 'Test Players logged in';
+export const playerSelectedMessage = name => `${name} selected`;
+export const selectQuestionMessage = name => `${name} selecting question`;
+export const selectedQuestionMessage = number => `selected question # ${number}`;
+export const playerExludedMessage = name => `Player ${name} was excluded`;
+
+export const unknownErrorMessage = 'An unknown error occurred';
+
+export const snackOptions = {
+    variant: 'info',
+    anchorOrigin: {
+        horizontal: 'right',
+        vertical: 'top',
+    },
+};
+
+// console.log(process.env);
+
+// export const API_URL = process.env.REACT_APP_API_URL || 'https://staging.savvydatingapp.com';
+// export const API_URL = process.env.REACT_APP_API_URL || 'http://savvy-prod-lb-284bfd1f1b7f988c.elb.us-east-2.amazonaws.com:3002';
+export const API_URL = 'http://localhost:3002/';
+// export const API_URL = process.env.REACT_APP_API_URL || 'http://10.13.1.25:3000';
+// export const API_URL = process.env.REACT_APP_API_URL || 'http://3.135.212.216:3000';
+
+
+export const states = {
+    SIMULATOR_START: 'SIMULATOR_START',
+    WAITING_FOR_WOMEN: 'WAITING_FOR_WOMEN',
+    WAITING_FOR_MAN: 'WAITING_FOR_MAN',
+    WAITING_FOR_INVITED: 'WAITING_FOR_INVITED',
+    WAITING_FOR_NEXT_ROUND_REQUEST: 'WAITING_FOR_NEXT_ROUND_REQUEST',
+    WAITING_FOR_QUESTION: 'WAITING_FOR_QUESTION',
+    WAITING_FOR_ANSWER: 'WAITING_FOR_ANSWER',
+    WAITING_FOR_ELIMINATE: 'WAITING_FOR_ELIMINATE',
+    WAITING_FOR_PLAYER: 'WAITING_FOR_PLAYER',
+    FINISHED: 'FINISHED',
+    CANCELED: 'CANCELED',
+};
+
+export const eventsList = {
+    GAME_HAS_CREATED: 'GAME_HAS_CREATED',
+    GAME_HAS_CANCELED: 'GAME_HAS_CANCELED',
+    GAME_HAS_STARTED: 'GAME_HAS_STARTED',
+    GAME_HAS_FINISHED: 'GAME_HAS_FINISHED',
+    GAME_INVITE_HAS_SENT: 'GAME_INVITE_HAS_SENT',
+    GAME_ROUND_HAS_CHANGED: 'GAME_ROUND_HAS_CHANGED',
+    GAME_INVITE_HAS_GENERATED: 'GAME_INVITE_HAS_GENERATED',
+    GAME_PLAYER_HAS_JOINED_BY_INVITE: 'GAME_PLAYER_HAS_JOINED_BY_INVITE',
+    GAME_ERROR: 'GAME_ERROR',
+    GAME_PLAYER_HAS_JOINED: 'GAME_PLAYER_HAS_JOINED',
+    GAME_PLAYER_HAS_LEFT: 'GAME_PLAYER_HAS_LEFT',
+    GAME_PLAYER_HAS_ANSWERED: 'GAME_PLAYER_HAS_ANSWERED',
+    GAME_PLAYER_HAS_ASKED_QUESION: 'GAME_PLAYER_HAS_ASKED_QUESION',
+    GAME_PLAYER_HAS_ELIMINATED: 'GAME_PLAYER_HAS_ELIMINATED',
+    GAME_PLAYER_CAN_REJOIN: 'GAME_PLAYER_CAN_REJOIN',
+    GAME_PLAYER_HAS_REJOINED: 'GAME_PLAYER_HAS_REJOINED',
+    GAME_PLAYER_HAS_INITED: 'GAME_PLAYER_HAS_INITIALIZED',
+    GAME_PLAYER_CAN_ELIMINAME: 'GAME_PLAYER_CAN_ELIMINATED',
+    GAME_PLAYER_IS_SPECTATING: 'GAME_PLAYER_IS_SPECTATING',
+    GAME_PLAYER_HAS_AUTO_JOINED: "GAME_PLAYER_HAS_AUTO_JOINED",
+
+    // From client
+    GAME_PLAYER_INIT: 'GAME_PLAYER_INIT',
+    GAME_PLAYER_JOIN: 'GAME_PLAYER_JOIN',
+    GAME_PLAYER_LEAVE: 'GAME_PLAYER_LEAVE',
+    GAME_PLAYER_INVITE: 'GAME_PLAYER_INVITE',
+    GAME_PLAYER_ASK: 'GAME_PLAYER_ASK',
+    GAME_PLAYER_ASK_CUSTOM: 'GAME_PLAYER_ASK_CUSTOM',
+    GAME_PLAYER_ANSWER: 'GAME_PLAYER_ANSWER',
+    GAME_PLAYER_ELIMINATE: 'GAME_PLAYER_ELIMINATE',
+    GAME_PLAYER_JOIN_BY_INVITE: 'GAME_PLAYER_JOIN_BY_INVITE',
+    GAME_PLAYER_SEARCH: 'GAME_PLAYER_SEARCH',
+    GAME_PLAYER_REQUEST_ROUND: 'GAME_PLAYER_REQUEST_ROUND',
+    GAME_PLAYER_ONLINE: 'GAME_PLAYER_ONLINE',
+    GAME_PLAYER_OFFLINE: 'GAME_PLAYER_OFFLINE',
+    GAME_PLAYER_CANCEL_ALL: 'GAME_PLAYER_CANCEL_ALL',
+    GAME_PLAY_TIMEOUT: 'GAME_PLAY_TIMEOUT',
+    GAME_PLAYER_SPECTATING: 'GAME_PLAYER_SPECTATING',
+    GAME_PLAYER_AUTO_JOIN: 'GAME_PLAYER_AUTO_JOIN',
+};
